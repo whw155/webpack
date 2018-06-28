@@ -128,7 +128,7 @@ module.exports = {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
-    }
+    },
   },
   filters: {
     '.eslintrc.js': 'lint',
