@@ -227,7 +227,7 @@ new Vue({
 
 
 ```
-vue init jamielhf/webpack#template1 name
+vue init whw155/webpack name
 
 ```
 #### github地址
