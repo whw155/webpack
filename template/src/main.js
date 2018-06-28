@@ -17,7 +17,7 @@ Vue.use(iview);
 Vue.config.productionTip = false;
 Vue.config.debug = true;
 Vue.prototype.$utils = Utils;
-Vue.prototype.$ajax = http;
+Vue.prototype.$axios = http;
 
 
 // 路由拦截
