@@ -4,18 +4,24 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
-{{#router}}
+
 import router from './router'
-{{/router}}
 
-Vue.config.productionTip = false
+import store from './store'
 
+Vue.config.productionTip = false;
+Vue.config.debug = true;
+
+
+// 路由拦截
+router.beforeEach((to, from, next) => {
+	
+});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
+  store,
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
